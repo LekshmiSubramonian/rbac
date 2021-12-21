@@ -1,0 +1,38 @@
+.topnavbar{
+    display: flex;
+    background-color: #3c8dbc;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.topnavbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.topnavbar-left h2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.topnavbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.topnavbar-right > p{
+    margin: 0px 20px;
+}
+
+.topnav-icons{
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    margin: 0px 20px;
+}
