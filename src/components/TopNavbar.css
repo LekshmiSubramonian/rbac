@@ -8,6 +8,7 @@
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
+    /* height: 80px; */
 }
 
 .topnavbar-left{
@@ -35,4 +36,21 @@
     align-items: center;
     font-size: 30px;
     margin: 0px 20px;
+}
+
+.topnavbar-right > .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.profile .profile-icon{
+    font-size: 30px;
+    /* line-height: 40px; */
+}
+
+.topnavbar-right .profile p{
+    font-size: 15px;
 }

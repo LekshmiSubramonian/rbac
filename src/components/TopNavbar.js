@@ -1,6 +1,5 @@
 import React from 'react'
-import {BiAnchor} from 'react-icons/bi'
-import {AiOutlineStar} from 'react-icons/ai'
+import {CgProfile} from 'react-icons/cg'
 import './TopNavbar.css'
 import {Link} from 'react-router-dom';
 
@@ -12,18 +11,12 @@ function TopNavbar(props) {
                     <Link to="" className='topnav-icons'   >
                         {props.menu}
                     </Link>
-                    
-                <h2>India</h2>
             </div>
             <div className='topnavbar-right'>
-                <p>India</p>
-                <p>Welcome Admin</p>
-                <Link to="" className='topnav-icons'  >
-                        <BiAnchor  />
-                </Link>
-                <Link to="" className='topnav-icons'  >
-                    <AiOutlineStar  />
-                </Link>
+                <div className='profile'>
+                    <CgProfile className='profile-icon' />
+                    <p>Logout</p>
+                </div>
             </div>
         </div>
     )
