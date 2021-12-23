@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import {RiAdminFill} from 'react-icons/ri'
 import {AiFillDashboard, AiFillSetting, AiOutlineMenu} from 'react-icons/ai'
 import {IoMdArrowDropdown} from 'react-icons/io'
-
 import './SideNavbar.css'
 import { MdSpeakerNotes } from 'react-icons/md'
 import { ImCross } from 'react-icons/im'
@@ -10,16 +9,13 @@ import { FaDatabase, FaUserPlus, FaUserTag } from 'react-icons/fa'
 import {MdOutlineSecurity} from 'react-icons/md'
 import TopNavbar from './TopNavbar'
 import { useDispatch, useSelector } from 'react-redux'
-
+import {Link} from 'react-router-dom'
+ 
 function SideNavbar() {
 
     const toogleState = useSelector(state => state.toogleState)
     const dispatch = useDispatch();
-    
-
-    
-
-    
+   
     useEffect(() => {
         let arrow = document.querySelectorAll(".arrow");
         console.log(arrow);
@@ -50,27 +46,32 @@ function SideNavbar() {
             </div>
             <ul className='nav-links'>
                 <li>
-                    <a href="#">
+                    <Link to='/asset'>
                         <FaUserPlus className="ri-icons"/>
                         <span className="link_name">Asset</span>
-                    </a>
+                    </Link>
                     <ul className="sub-menu blank">
-                        <li><a className="link_name" href="#">Asset</a></li>
+                        <li>
+                            <Link className='link_name' to='/asset'>Asset</Link>
+                        </li>
                     </ul>
                 </li>
                 {/* <li>
                     <div className="iocn-link">
                         <a href="#">
-                            <AiFillSetting className="ri-icons"/>
-                            <span className="link_name">Category</span>
+                            <FaUserPlus className="ri-icons"/>
+                            <span className="link_name">Asset</span>
                         </a>
                         <IoMdArrowDropdown className='arrow' />
                     </div>
                     <ul className="sub-menu">
-                        <li><a className="link_name" href="#">Category</a></li>
-                        <li><a href="#">HTML & CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">PHP & MySQL</a></li>
+                        <li><a className="link_name" href="#">Asset</a></li>
+                        <li>
+                            <Link to='/createasset'>
+                                <a>Create Asset</a>
+                            </Link>
+                        </li>
+                        <li><a href="#">View Asset</a></li>
                     </ul>
                 </li> */}
                 <li>

@@ -7,6 +7,8 @@ import Filter from './components/Filter';
 import { Provider } from 'react-redux';
 import store from './redux/store'
 import Dashboard from './Pages/Dashboard'
+import CreateAsset from './Pages/CreateAsset';
+import ViewAsset from './Pages/ViewAsset';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Router>
           <SideNavbar /> 
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/asset" element={<ViewAsset />} />
+              <Route path="/createasset" element={<CreateAsset />} />
             </Routes>
         </Router>
       </div>

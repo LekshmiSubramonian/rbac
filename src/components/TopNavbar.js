@@ -8,9 +8,7 @@ function TopNavbar(props) {
     return (
         <div className='topnavbar'>
             <div className='topnavbar-left'>
-                    <Link to="" className='topnav-icons'   >
                         {props.menu}
-                    </Link>
             </div>
             <div className='topnavbar-right'>
                 <div className='profile'>

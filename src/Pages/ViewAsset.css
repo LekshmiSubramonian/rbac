@@ -1,0 +1,19 @@
+.view-asset{
+    position: relative;
+    left:68px;
+    width: calc(100% - 68px);
+    padding: 30px;
+}
+
+.table{
+    position: relative;
+    border: 2px solid black;
+    width:80%;
+}
+
+.view-asset .create-asset{
+    float:right;
+}
+
+
+
