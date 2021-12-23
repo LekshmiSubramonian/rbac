@@ -5,15 +5,19 @@
     padding: 30px;
 }
 
-.table{
+.table-bordered tr,th{
     position: relative;
-    border: 2px solid black;
-    width:80%;
+    border: 1px solid black;
+}
+
+.table {
+    text-align: center;
 }
 
 .view-asset .create-asset{
     float:right;
 }
+
 
 
 
